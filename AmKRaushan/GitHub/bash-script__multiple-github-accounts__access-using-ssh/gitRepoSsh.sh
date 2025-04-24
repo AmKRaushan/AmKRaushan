@@ -48,8 +48,8 @@ echo $config_block | clip
 echo "Configurations copied, now paste it into your config file at ~/.ssh/config"
 
 ## Confirm the configurations for config file
-read -p "Are you pasted your configurations with a valid indentations on your config file and saved? (y/n): " answer
-if [ "$answer" == "y" ]; then
+read -p "Are you pasted your configurations with a valid indentations on your config file and saved? (y/n): " config
+if [ "$config" == "y" ]; then
     echo "Now you can verify your configurations."
 else
     echo "Please paste your configurations on your config file and save it."
@@ -64,7 +64,7 @@ echo "You have successfully logged in to your SSH account."
 ## Feedback from user
 read -p "Please give us your feedback about this script in the comment box on my youtube channel named [AmKRaushan], had you given your feedback? (y/n): " feedback
 
-if [ "$answer" == "y" ]; then
+if [ "$feedback" == "y" ]; then
     echo "Thanks for subscribing us..."
 else
     echo "Please share your feedback in the comment box on my youtube channel [AmKRaushan], did you accessed your github accounts using this bash script"
